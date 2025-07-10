@@ -1,0 +1,26 @@
+{
+  "info": {
+    "name": "Java ToDo App API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Tasks",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/tasks"
+      }
+    },
+    {
+      "name": "Create Task",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/api/tasks",
+        "body": {
+          "mode": "raw",
+          "raw": "{ "title": "Learn GitLab", "completed": false }"
+        }
+      }
+    }
+  ]
+}
